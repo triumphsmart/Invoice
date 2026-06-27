@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.left-panel h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.left-panel ul {
+  list-style: none;
+}
+
+.left-panel ul ul {
+  padding-left: 15px;
+  margin: 5px 0;
+}
+
+.left-panel li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.left-panel li a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  display: block;
+  padding: 5px 0;
+}
+
+.left-panel p {
+  margin: 15px 0 10px;
+  font-size: 12px;
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-content {
+  margin-left: 260px;
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.invoice-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.invoice {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.invoice table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+}
+
+.invoice th,
+.invoice td {
+  text-align: left;
+  padding: 8px 0;
+  font-size: 14px;
+  color: rgb(80, 80, 80);
+}
+
+.invoice thead th {
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+}
+
+.invoice tbody tr td {
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.export {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+.export p {
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.send-invoice {
+  background-color: rgb(0, 123, 255);
+  color: white;
+}
+
+.download {
+  background-color: rgb(199, 197, 197);
+  color: white;
+}
+
+.print {
+  display: flex;
+  background-color: rgb(199, 197, 197);
+  padding: 10%;
+  border-radius: 8px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.edit {
+  display: flex;
+  background-color: rgb(199, 197, 197);
+  padding: 10%;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.add-payment {
+  background-color: rgb(40, 199, 111);
+  color: white;
+}
